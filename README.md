@@ -18,4 +18,4 @@ This software is **_Open Source_**
 
 Use, reuse and modify these files as you see fit. Please maintain the attribution and release anything derivateve under the same license.
 
-Distributed as-is, no warranty is given. If you find any bugs in the code just create a Pull request and I'll try to solve the issue.
+Distributed as-is, no warranty is given. If you find any bugs in the code just create an Issue and I'll try to solve the issue.
