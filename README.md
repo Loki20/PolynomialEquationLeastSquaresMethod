@@ -1,6 +1,6 @@
 # Polynomial Equation Using The Least Squares Method
 Approximate a dataset to a polynomial equation using the least squares method using Python. 
-This code has been written with [Neutrium](https://neutrium.net/mathematics/least-squares-fitting-of-a-polynomial/) webpage wide.
+This code has been written with [Neutrium](https://neutrium.net/mathematics/least-squares-fitting-of-a-polynomial/) webpage guide.
 
 ## What is needed to run this code
 In order to run this code you will need:
