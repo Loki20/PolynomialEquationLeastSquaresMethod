@@ -14,8 +14,8 @@ Y = np.array([0.9, 0.8, 0.4, 0.2, 0.1, 0])
 k = 2  # Polynomial order
 
 # Arrays for plotting
-Xn = np.linspace(np.min(X), np.max(X), 200)
-Yn = np.empty(200)
+Xn = np.linspace(np.min(X), np.max(X), 2000)
+Yn = np.empty(2000)
 
 # Matrices
 M = np.empty([k+1, k+1])
