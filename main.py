@@ -1,12 +1,17 @@
+# This code uses Neutrium webpage as a guide check they full article here: https://neutrium.net/mathematics/least-squares-fitting-of-a-polynomial/
+# In order to use the code just change the X and Y datasets with your data
+# Written by: Loki20
+# Date: November 7th 2020
+
 import numpy as np
 import defs as f
 import matplotlib.pyplot as plt
 
 
 # DATA
-X = np.array([0.08279, 0.41415, 0.82851, 1.24302, 1.65767, 2.07242, 2.48726, 2.90216, 3.31709, 3.73203, 4.14696])
-Y = np.array([200, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000])
-k = 5  # Polynomial order
+X = np.array([-3, -2, -1, -0.2, 1, 3])
+Y = np.array([0.9, 0.8, 0.4, 0.2, 0.1, 0])
+k = 2  # Polynomial order
 
 # Arrays for plotting
 Xn = np.linspace(np.min(X), np.max(X), 200)
@@ -29,7 +34,21 @@ for x in range(k+1):
 for x in range(A.size):
     A[x][0] = (np.linalg.det(f.INSERTB(x, M, B)))/(np.linalg.det(M))
 
-print(A)
+# Printing the output equation to console
+out = " y = "
+for x in range(A.size):
+    if x == 0:
+        if A[x][0] < 0:
+            out += "- " + str((A[x][0])*-1)
+        else:
+            out += str(A[x][0])
+    else:
+        if A[x][0] < 0:
+            out += " - " + str((A[x][0])*-1) + " * x**" + str(x)
+        else:
+            out += " + " + str(A[x][0]) + " * x**" + str(x)
+
+print(out)
 
 # Filing plotting arrays
 for x in range(Yn.size):
