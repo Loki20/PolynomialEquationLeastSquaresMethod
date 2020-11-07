@@ -1,6 +1,6 @@
 # This code uses Neutrium webpage as a guide check they full article here: https://neutrium.net/mathematics/least-squares-fitting-of-a-polynomial/
 # In order to use the code just change the X and Y datasets with your data
-# Written by: Loki20
+# Written by: TheLoki2020
 # Date: November 7th 2020
 
 import numpy as np
