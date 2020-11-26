@@ -34,7 +34,7 @@ for x in range(k+1):
 for x in range(A.size):
     A[x][0] = (np.linalg.det(f.INSERTB(x, M, B)))/(np.linalg.det(M))
 
-# Printing the output equation to console
+# Printing the output equation on console
 out = " y = "
 for x in range(A.size):
     if x == 0:
